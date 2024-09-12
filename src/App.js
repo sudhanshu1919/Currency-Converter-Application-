@@ -1,11 +1,12 @@
-import React from "react";
-import Main from "./Currencyapp/pages/Main";
-function App() {
+import ConverterForm from "./Currency_App/component/ConverterForm";
+
+const App = () => {
   return (
-    <>
-      <Main />
-    </>
+    <div className="currency-converter">
+      <h2 className="converter-title">Currency Converter</h2>
+      <ConverterForm />
+    </div>
   );
-}
+};
 
 export default App;

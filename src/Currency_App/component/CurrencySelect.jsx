@@ -1,5 +1,5 @@
-// Data.js
-export const currencyCodes = [
+// Array of currency codes
+const currencyCodes = [
   "AED",
   "AFN",
   "ALL",
@@ -162,3 +162,27 @@ export const currencyCodes = [
   "ZMW",
   "ZWL",
 ];
+
+const CurrencySelect = ({ selectedCurrency, handleCurrency }) => {
+  // Extract the country code from the selected currency code
+  const countryCode = selectedCurrency.substring(0, 2);
+
+  return (
+    <div className="currency-select">
+      <img src={`https://flagsapi.com/${countryCode}/flat/64.png`} alt="Flag" />
+      <select
+        onChange={handleCurrency}
+        className="currency-dropdown"
+        value={selectedCurrency}
+      >
+        {currencyCodes.map((currency) => (
+          <option key={currency} value={currency}>
+            {currency}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
+};
+
+export default CurrencySelect;
