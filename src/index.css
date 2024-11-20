@@ -13,7 +13,8 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-background-image: linear-gradient(to left bottom, #d3d3d3, #9a9a9a, #646464, #333333, #000000);
+background: rgb(131,58,180);
+background: linear-gradient(63deg, rgba(131,58,180,1) 0%, rgba(255,0,0,1) 50%, rgba(252,176,69,1) 100%);
 }
 
 #root {
