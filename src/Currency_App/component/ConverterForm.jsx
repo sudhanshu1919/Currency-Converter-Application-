@@ -94,7 +94,7 @@ const ConverterForm = () => {
         type="submit"
         className={`${isLoading ? "loading" : ""} submit-button`}
       >
-        Get Exchange Rate
+         Exchange Rate
       </button>
       <p className="exchange-rate-result">
         {/* Display the conversion result */}
